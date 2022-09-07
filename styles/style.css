@@ -554,7 +554,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .c {
-  width: 70%;
+  width: 60%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
@@ -562,23 +562,23 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 60%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 60%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 60%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 60%;
+  width: 75%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
-  width: 60%;
+  width: 75%;
 }
 
 .courses {
@@ -671,12 +671,15 @@ section {
   color: var(--color-white);
   font-size: 1.3rem;
   padding: .5rem;
+  position: relative;
+  top: 2%;
 }
 
 .portfolios .portfolio-item p {
   padding: .5rem;
   text-align: center;
   font-size: 1rem;
+  height: 100%;
 }
 
 .portfolios .portfolio-item .icons {

@@ -404,25 +404,25 @@ section {
                         width: 80%;
                     }
                     .c{
-                        width: 70%;
+                        width: 60%;
                     }
                     .python{
                         width: 80%;
                     }
                     .html{
-                        width: 60%;
+                        width: 75%;
                     }
                     .css{
-                        width: 60%;
+                        width: 75%;
                     }
                     .js{
-                        width: 60%;
+                        width: 75%;
                     }
                     .react{
-                        width: 60%;
+                        width: 75%;
                     }
                     .sql{
-                        width: 60%;
+                        width: 75%;
                     }
                 }
             }
@@ -495,11 +495,14 @@ section {
             color: var(--color-white);
             font-size: 1.3rem;
             padding: .5rem;
+            position: relative;
+            top: 2%;
         }
         p{
             padding: .5rem;
             text-align: center;
             font-size: 1rem;
+            height: 100%;
         }
         .icons{
             display: flex;

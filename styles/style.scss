@@ -302,10 +302,20 @@ section {
             }
         }
         .submit-btn{
-            padding-top: .8rem;
+            padding-top: .5rem;
             padding-bottom: 3rem;
             .send-btn{
                 cursor: pointer;
+                background-color: var(--color-secondary);
+                color: var(--color-white1);
+                border-radius: 30px;
+                padding: 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .send-btn-icon{
+                padding-left: .5rem;
             }
         }
     }

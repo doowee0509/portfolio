@@ -402,10 +402,10 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form method="POST">
+                        <form onsubmit="sendEmail(); return false;">
                             <div class="input-control i-c-2">
                                 <input type="text" id="name" name="name" required placeholder="Name">
-                                <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" id="emailform" name="email" required placeholder="Email">
+                                <input type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" id="emailform" name="email" required placeholder="Email">
                             </div>
                             <div class="input-control">
                                 <input type="text" id="subject" name="subject" placeholder="Subject">
@@ -414,9 +414,9 @@
                                 <textarea name="message" id="message" cols="15" rows="6" required placeholder="Message..."></textarea>
                             </div>
                             <div class="input-control submit-btn">
-                                <button type="" class="send-btn" onclick="sendEmail()">
+                                <button type="submit" class="send-btn">
                                     <span class="btn-text">Send</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                                    <span class="send-btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
                                 </button>
                             </div>
                         </form>

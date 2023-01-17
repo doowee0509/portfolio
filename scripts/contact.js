@@ -1,19 +1,18 @@
+user = document.getElementById("name")
+email = document.getElementById("emailform")
+subject = document.getElementById("subject")
+message = document.getElementById("message")
 function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "ngocduy000937@gmail.com",
-        Password: "Duynguyen0509!",
-        To: 'ngocduy000937@gmail.com',
-        From: "ngduy@umich.edu",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-        Attachments: [
-        {
-            name: "File_Name_with_Extension",
-            path: "Full Path of the file"
-        }]
-    })
-        .then(function (message) {
-        alert("Mail has been sent successfully")
+    var params = {
+        from_name : user.value,
+        email : email.value,
+        subject : subject.value,
+        message : message.value
+    }
+    valid = user.validity.valid && email.validity.valid && message.validity.valid
+    if (valid) {
+        emailjs.send("service_hrwo5lj","template_lr8nuyt", params).then(() => {
+            alert("Your email has been sent!")
         });
+    }
 }

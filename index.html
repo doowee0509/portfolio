@@ -7,11 +7,19 @@
     <title>Duy Nguyen - Personal Website</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,400;1,600&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,400;1,600&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("mMrCLirXIxXPJblc_");
+    })();
+    </script>
 </head>
-<body class="main-content">
+<body class="main-content light-mode">
     <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -57,7 +65,7 @@
                 <div class="left-about">
                     <h4>University of Michigan - Ann Arbor</h4>
                     <p>
-                        I'm currently a Junior at the University of Michigan pursuing a degree in Computer Science.
+                        I'm currently a Senior at the University of Michigan pursuing a degree in Computer Science.
                         I'm interested in software engineering because it's very engaging and fun. 
                         Besides that, I also enjoy reading Webtoons, playing volleyball, and tennis.
                     </p>
@@ -66,7 +74,7 @@
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">GPA</p>
-                            <p class="small-text">3.3<br/> </p>
+                            <p class="small-text">3.4<br/> </p>
                         </div>
                     </div>
                     
@@ -79,7 +87,7 @@
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">Tools</p>
-                            <p class="small-text">Github, VS Code, VS 2019<br/> </p>
+                            <p class="small-text">Github, VSCode<br/> </p>
                         </div>
                     </div>
                     <div class="about-item">
@@ -123,7 +131,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">HTML5</p>
                         <div class="progress-con">
-                            <p class="prog-text">75%</p>
+                            <p class="prog-text">80%</p>
                             <div class="progress">
                                 <span class="html"></span>
                             </div>
@@ -132,7 +140,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">CSS3</p>
                         <div class="progress-con">
-                            <p class="prog-text">75%</p>
+                            <p class="prog-text">80%</p>
                             <div class="progress">
                                 <span class="css"></span>
                             </div>
@@ -166,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="other-stat">Others: Sass, Java, Go, Git, npm, bash</h4>
+                <h4 class="other-stat">Others: Sass, Java, Go, Git, npm, bash, Bootstrap, PHP, WordPress, Swift</h4>
             </div>
             <h4 class="stat-title">Relevant Courses</h4>
             <div class="courses">
@@ -236,12 +244,6 @@
                             A web application that allow users to search, save and have access to 2000+ recipes with detailed instructions and ingredient list. Users can also share their own recipes and formulate personalized weekly meal plans with an auto-generated shopping list on the platform.
                         </p>
                         <div class="icons">
-                            <div class="icon">
-                                <a href="https://reciholic.surge.sh/" target="_blank" class="icon">
-                                    <i class="fa-solid fa-link"></i>
-                                </a>
-                                
-                            </div>
                             <div class="icon">
                                 <a href="https://github.com/the-brigadee/Reciholic" target="_blank" class="icon">
                                     <i class="fab fa-github" aria-hidden="true"></i>
@@ -402,17 +404,17 @@
                     <div class="right-contact">
                         <form method="POST">
                             <div class="input-control i-c-2">
-                                <input type="text" name="name" required placeholder="Name">
-                                <input type="email" name="email" required placeholder="Email">
+                                <input type="text" id="name" name="name" required placeholder="Name">
+                                <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" id="emailform" name="email" required placeholder="Email">
                             </div>
                             <div class="input-control">
-                                <input type="text" name="subject" required placeholder="Subject">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="message" id="" cols="15" rows="6" required placeholder="Message..."></textarea>
+                                <textarea name="message" id="message" cols="15" rows="6" required placeholder="Message..."></textarea>
                             </div>
                             <div class="input-control submit-btn">
-                                <button type="" class="send-btn" onclick="sendMail()">
+                                <button type="" class="send-btn" onclick="sendEmail()">
                                     <span class="btn-text">Send</span>
                                     <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
                                 </button>

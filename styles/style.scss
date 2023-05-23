@@ -82,7 +82,6 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
-    
 }
 
 .section{
@@ -99,11 +98,14 @@ section {
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    padding: 3rem 8rem 3rem 7rem;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    padding: 3rem 8rem 3rem 7rem;
+
 }
 
 .sec4{
@@ -318,62 +320,35 @@ section {
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 3.5rem;
-    padding-bottom: 5rem;
+    color: var(--color-white);
     .right-about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        .about-item {
-            border: 1px solid var(--color-grey-5);
-            border-radius: 5px;
-            transition: all .4s ease-in-out;
-            box-shadow: 1px 2px 15px rgba(0,0,0,.1);
-            &:hover {
-                cursor: default;
-                transform: translateY(-5px);
-                border: 1px solid var(--color-secondary);
-                box-shadow: 1px 4px 15px rgba(0,0,0,.32);
-            }
-            .abt-text {
-                padding: .7rem;
-                display: flex;
-                flex-direction: column;
-                .large-text {
-                    font-size: 2rem;
-                    font-weight: 700;
-                    color: var(--color-secondary);
-                }
-                .small-text {
-                    padding-left: 3rem;
-                    position: relative;
-                    font-size: 1rem;
-                    color: var(--color-grey-1);
-                    letter-spacing: 2px;
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        top: 15px;
-                        width: 2rem;
-                        height: 2px;
-                        background-color: var(--color-grey-5);
-                    }
-                }
-            }
+        display: flex;
+        flex-direction: column;
+        h1 {
+            padding-left: 1rem;
+            color: var(--color-white);
         }
-    }
-
-    .left-about {
-        padding-right: 5rem;
         p {
-            line-height: 2rem;
-            padding-top: 1rem;
-            color: var(--color-grey-1);
+            line-height: 1.5rem;
+            color: var(--color-white);
         }
         h4 {
-            font-size: 1.5rem;
-            // text-transform: uppercase;
+            font-size: 1rem;
+            color: var(--color-white);
+        }
+    }
+    .left-about {
+        padding-right: 5rem;
+        h1 {
+            padding-left: 1rem;
+            color: var(--color-white);
+        }
+        p, ul {
+            color: var(--color-white);
+        }
+        h4 {
+            font-size: 1rem;
+            color: var(--color-white);
         }
     }
 }
@@ -442,45 +417,6 @@ section {
 
 }
 
-// Courses
-.courses{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding-bottom: 3rem;
-    .course-item{
-        position: relative;
-        padding-left: 3rem;
-        border-left: 1px solid var(--color-grey-5);
-        .course-icon{
-            position: absolute;
-            left: -27px;
-            top: 0;
-            background-color: var(--color-secondary);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i{
-                font-size: 1.3rem;
-                color: var(--color-white1);
-            }
-        }
-        h5{
-            padding: 1rem 0;
-            font-size: 1.3rem;
-            font-weight: 600;
-            span{
-                color: var(--color-grey-3);
-                font-weight: 500;
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
 //Portfolio section
 .port-text{
     padding: 2rem 0;
@@ -489,7 +425,7 @@ section {
 
 .portfolios{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
     .portfolio-item{
@@ -589,7 +525,6 @@ section {
         top: 0;
         width: 40%;
         height: 1px;
-        background-color: var(--color-grey-5);
         transform: translateX(-50%);
     }
 }
@@ -659,6 +594,42 @@ section {
         }
         &:hover{
             background-color: var(--color-secondary);
+        }
+    }
+}
+
+// timeline 
+.timeline {
+    background: var(--primary-color);
+    padding: 20px;
+    .outer {
+        border-left: 2px solid var(--color-secondary);
+        .card {
+            position: relative;
+            margin: 0 0 20px 20px;
+            padding: 10px;
+            color: var(--color-grey-3);
+            border-radius: 8px;
+            min-width: 400px;
+            border: var(--color-secondary) 1px solid;
+            .info {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    color: var(--color-secondary);
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background: white;
+                        border-radius: 999px;
+                        left: -40px;
+                        border: 3px solid var(--color-secondary);
+                    }
+                }
+            }
         }
     }
 }

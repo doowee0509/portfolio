@@ -557,7 +557,7 @@ section {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    .btn-text { padding:0 0 0 2rem; color: var(--color-white1);}
+    .btn-text { padding:0 0 0 1.5rem; color: var(--color-white1);}
     .btn-icon {
         background-color: var(--color-secondary);
         display: flex;
@@ -595,6 +595,13 @@ section {
         &:hover{
             background-color: var(--color-secondary);
         }
+    }
+}
+
+// icon list
+.logo-list {
+    li {
+        display: inline;
     }
 }
 

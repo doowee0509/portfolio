@@ -770,7 +770,7 @@ section {
 }
 
 .main-btn .btn-text {
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.5rem;
   color: var(--color-white1);
 }
 
@@ -834,6 +834,10 @@ section {
 
 .about-me__links .about-me__link:hover {
   background-color: var(--color-secondary);
+}
+
+.logo-list li {
+  display: inline;
 }
 
 .timeline {

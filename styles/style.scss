@@ -325,7 +325,6 @@ section {
         display: flex;
         flex-direction: column;
         h1 {
-            padding-left: 1rem;
             color: var(--color-white);
         }
         p {
@@ -340,7 +339,6 @@ section {
     .left-about {
         padding-right: 5rem;
         h1 {
-            padding-left: 1rem;
             color: var(--color-white);
         }
         p, ul {
@@ -608,7 +606,6 @@ section {
 // timeline 
 .timeline {
     background: var(--primary-color);
-    padding: 20px;
     .outer {
         border-left: 2px solid var(--color-secondary);
         .card {

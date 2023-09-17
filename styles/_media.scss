@@ -14,6 +14,47 @@
 
 }
 
+@media screen and (max-width:525px){
+    .timeline {
+        .outer {
+            .card {
+                min-width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .timeline {
+        .outer {
+            .card {
+                min-width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 435px){
+    .timeline {
+        .outer {
+            .card {
+                min-width: 320px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .timeline {
+        .outer {
+            .card {
+                min-width: 290px;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 1432px){
     header{
         padding: 0 !important;
@@ -22,9 +63,7 @@
         padding-right: 5rem !important;
         padding-top: 2rem !important;
     }
-    .section {
-        padding: 7rem 11rem;
-    }
+
     .contact-content-con{
         flex-direction: column;
         .right-contact{
@@ -80,6 +119,7 @@
             }
         }
     }
+
 }
 
 @media screen and (max-width: 970px){
@@ -89,6 +129,10 @@
     header .right-header{
         padding: 0 !important;
         padding-top: 2rem !important;
+    }
+
+    .section {
+        padding: 5rem 3rem !important;
     }
 
     .theme-btn{
@@ -155,7 +199,6 @@
             font-size: 3rem !important;
         }
     }
-
 }
 
 @media screen and (max-width: 700px){
@@ -163,7 +206,9 @@
         padding: 3rem 1.5rem !important;
     }
     .header{
-        padding: 0 !important;
+        .right-header {
+            padding: 0 !important;
+        }
     }
 
     .about-stats .progress-bars{

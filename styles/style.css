@@ -269,7 +269,8 @@ section {
 }
 
 .header-content .left-header .image img {
-  border-radius: 14px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -906,9 +907,11 @@ input[type="checkbox"].toggle + label::before {
   content: "";
   width: 50px;
   height: 25px;
-  background: url(https://i.ibb.co/6PjQWbL/Frame-5-3.png);
+  background: url(https://i.ibb.co/RTktpmX/Frame-6.png);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   background-size: contain;
-  background-color: #6e94f5;
+  background-color: #20273d;
   border: solid 1px var(--color-grey-6);
   border-radius: 25px;
   margin: auto;
@@ -927,22 +930,25 @@ input[type="checkbox"].toggle + label::after {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  content: "";
   height: 20px;
   width: 20px;
   left: 3px;
-  background-color: #f5e871;
+  background-color: #e7e7e7;
   color: white;
   border-radius: 12px;
   -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   transition: background-color 200ms ease-in-out, -webkit-transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   transition: background-color 200ms ease-in-out, transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   transition: background-color 200ms ease-in-out, transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28), -webkit-transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  content: "";
+  background: url(https://i.ibb.co/9WBF0XX/Subtract.png);
+  background-size: contain;
+  background-color: #e7e7e7;
 }
 
 input[type="checkbox"].toggle:checked + label::before {
-  background: url(https://i.ibb.co/RTktpmX/Frame-6.png);
-  background-color: #20273d;
+  background: url(https://i.ibb.co/6PjQWbL/Frame-5-3.png);
+  background-color: #6e94f5;
   background-size: contain;
 }
 
@@ -950,9 +956,9 @@ input[type="checkbox"].toggle:checked + label::after {
   content: "";
   -webkit-transform: translateX(110%);
           transform: translateX(110%);
-  background: url(https://i.ibb.co/9WBF0XX/Subtract.png);
+  background: none;
   background-size: contain;
-  background-color: #e7e7e7;
+  background-color: #f5e871;
 }
 
 @media screen and (max-width: 600px) {

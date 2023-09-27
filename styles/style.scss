@@ -204,7 +204,8 @@ section {
             background-color: var(--color-black);
             transition: all .4s ease-in-out;
             img{
-                border-radius: 14px;
+                border-radius: 10px;
+                background-color: var(--color-primary);
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -638,6 +639,65 @@ section {
     }
 }
 
+// input[type="checkbox"].toggle {
+//     opacity: 0;
+//     position: absolute;
+//     left: -9000px;
+//     top: -9000px;
+// }
+
+// input[type="checkbox"].toggle + label {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     cursor: pointer;
+//     width: 50px;
+//     margin: auto;
+// }
+
+// input[type="checkbox"].toggle + label::before {
+//     content: "";
+//     width: 50px;
+//     height: 25px;
+//     background: url(https://i.ibb.co/6PjQWbL/Frame-5-3.png);
+//     background-size: contain;
+//     background-color: #6e94f5;
+//     border: solid 1px var(--color-grey-6);
+//     border-radius: 25px;
+//     margin: auto;
+//     transition: background-color 200ms ease-in-out;
+// }
+
+// input[type="checkbox"].toggle + label::after {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     content: "";
+//     height: 20px;
+//     width: 20px;
+//     left: 3px;
+//     background-color: #f5e871;
+//     color: white;
+//     border-radius: 12px;
+//     transition: background-color 200ms ease-in-out,
+//     transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+// }
+
+// input[type="checkbox"].toggle:checked + label::before {
+//     background: url(https://i.ibb.co/RTktpmX/Frame-6.png);
+//     background-color: #20273d;
+//     background-size: contain;
+// }
+
+// input[type="checkbox"].toggle:checked + label::after {
+//     content: "";
+//     transform: translateX(110%);
+//     background: url(https://i.ibb.co/9WBF0XX/Subtract.png);
+//     background-size: contain;
+//     background-color: #e7e7e7;
+// }
+
 input[type="checkbox"].toggle {
     opacity: 0;
     position: absolute;
@@ -658,9 +718,10 @@ input[type="checkbox"].toggle + label::before {
     content: "";
     width: 50px;
     height: 25px;
-    background: url(https://i.ibb.co/6PjQWbL/Frame-5-3.png);
+    background: url(https://i.ibb.co/RTktpmX/Frame-6.png);
+    transform: scaleX(-1);
     background-size: contain;
-    background-color: #6e94f5;
+    background-color: #20273d;
     border: solid 1px var(--color-grey-6);
     border-radius: 25px;
     margin: auto;
@@ -672,29 +733,32 @@ input[type="checkbox"].toggle + label::after {
     justify-content: center;
     align-items: center;
     position: absolute;
-    content: "";
     height: 20px;
     width: 20px;
     left: 3px;
-    background-color: #f5e871;
+    background-color: #e7e7e7;
     color: white;
     border-radius: 12px;
     transition: background-color 200ms ease-in-out,
     transform 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    content: "";
+    background: url(https://i.ibb.co/9WBF0XX/Subtract.png);
+    background-size: contain;
+    background-color: #e7e7e7;
 }
 
 input[type="checkbox"].toggle:checked + label::before {
-    background: url(https://i.ibb.co/RTktpmX/Frame-6.png);
-    background-color: #20273d;
+    background: url(https://i.ibb.co/6PjQWbL/Frame-5-3.png);
+    background-color: #6e94f5;
     background-size: contain;
 }
 
 input[type="checkbox"].toggle:checked + label::after {
     content: "";
     transform: translateX(110%);
-    background: url(https://i.ibb.co/9WBF0XX/Subtract.png);
+    background: none;
     background-size: contain;
-    background-color: #e7e7e7;
+    background-color: #f5e871;
 }
 
 
